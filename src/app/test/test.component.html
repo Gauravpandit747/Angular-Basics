@@ -1,0 +1,99 @@
+<br><br>
+<!-- <button (click)="getData()">Test</button> -->
+<br>
+<br>
+<!-- <input type="text" #box (keyup)="getDataKeyUp(box.value)" placeholder="Capture Data Key Up">
+<br><br>
+<input type="text" #box1 (keydown)="getDataKeyUp(box1.value)" placeholder="Capture Data Key Down">
+<br><br>
+<input type="text" #box2 (blur)="getDataKeyUp(box2.value)" placeholder="Capture Data Blur">
+<br><br>
+<input type="text" #box3 (input)="getDataKeyUp(box3.value)" placeholder="Capture Data Input">
+<br><br> -->
+--------------------------------------------------------------
+<!-- <h1 (mouseover)="getDataKeyUp('Mouse Over')">MOUSE OVER</h1>
+<br><br>
+<h1 (mouseleave)="getDataKeyUp('Mouse Leave')">MOUSE LEAVE</h1>
+<br><br> -->
+--------------------------------------------------------------
+<!-- <h2>
+    String INterpolation 
+</h2>
+<br><br>
+<input type="text" placeholder="name" value="name" disabled="{{isDisabled}}">
+
+<br><br>
+<h2>
+    Property Binding
+</h2>
+<br><br>
+<input type="text" placeholder="name" [value]="name" [disabled] ="isDisabled">
+<br> -->
+--------------------------------------------------------------
+<!-- <br><br>
+<h1 *ngIf="show">If Check</h1> -->
+
+-----------------------------------------------------------------
+
+<!-- <ng-template [ngIf]="color === 'Red'">
+    <h1 style="color: red">
+        Color Red
+    </h1>
+</ng-template>
+
+<ng-template [ngIf] = "color === 'Green'">
+    <h1 style="color: green;">
+        Color Green
+    </h1>
+</ng-template>
+
+<ng-template [ngIf] = "color === 'Blue'">
+    <h1 style="color: blue;">
+        Color Blue
+    </h1>
+</ng-template> -->
+
+---------------------------------------------------------------------
+<!-- <div [ngSwitch]="color">
+<h1 *ngSwitchCase="'Red'" style="color: red;">Red Color</h1>
+<h1 *ngSwitchCase="'Green'" style="color: green;">Red Color</h1>
+<h1 *ngSwitchCase="'Blue'" style="color: blue;">Red Color</h1>
+<h1 *ngSwitchCase="'Orange'" style="color: orange;">Red Color</h1>
+<h1 *ngSwitchDefault style="color: black;">UNknown Color</h1>
+</div> -->
+
+---------------------------------------------------------------------
+
+<!-- <h1 *ngFor="let i of users" >
+{{i.name}}-- {{i.email}} -- {{i.phone}}
+</h1> -->
+
+---------------------------------------------------------------------
+
+<!-- <h1 [style.color] = 'color'>Dynamic color</h1>
+<button (click) = "changeColor()">Change color</button> -->
+
+---------------------------------------------------------------------
+<!-- <form #basicForm="ngForm" (ngSubmit)="getFormData(basicForm.value)">
+    <input type="text" ngModel name="name">
+    <br><br>
+    <input type="text" ngModel name="email">
+    <br><br>
+    <input type="text" ngModel name="password" placeholder="password">
+    <br><br>    
+    <button>Submit</button>
+</form> -->
+
+---------------------------------------------------------------------
+<!-- Parent to child  -->
+<!-- <h1>{{item}}</h1> -->
+
+---------------------------------------------------------------------
+<!-- Child to Parent  -->
+ <!-- <input type="text" name="" #box placeholder="enter data">
+ <button (click) = "updateDataEvent.emit(box.value)"> Update Data</button> -->
+
+ ---------------------------------------------------------------------
+ <!-- Two way binding  -->
+  <input type="text" placeholder="enter text" [(ngModel)] = 'name'> 
+  <h1>{{name}}</h1>
